@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Footprint Logger</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Footprint Logger</h1>
+  <div class="input-section">
+    <select id="category">
+      <option value="transport">Transport</option>
+      <option value="food">Food</option>
+      <option value="energy">Energy</option>
+    </select>
+    <input type="text" id="activity" placeholder="e.g., Drove 10km">
+    <button onclick="addActivity()">Add</button>
+  </div>
+
+  <div class="total">
+    <h2>Total CO₂: <span id="total">0</span> kg</h2>
+  </div>
+
+  <div class="chart-section">
+    <canvas id="footprintChart"></canvas>
+  </div>
+
+  <div class="filter">
+    <button onclick="filterActivities('all')">All</button>
+    <button onclick="filterActivities('food')">Food</button>
+    <button onclick="filterActivities('transport')">Transport</button>
+    <button onclick="filterActivities('energy')">Energy</button>
+  </div>
+
+  <div id="activity-log"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="data.js"></script>
+  <script src="chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+body {
+    font-family: sans-serif;
+    padding: 2rem;
+    background: #f7f7f7;
+    color: #333;
+  }
+  
+  .input-section, .filter {
+    margin-bottom: 20px;
+  }
+  
+  input, select, button {
+    padding: 8px;
+    margin-right: 10px;
+  }
+  
+  .chart-section {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 30px;
+  }
+  
+  #activity-log {
+    margin-top: 20px;
+  }
+  
+  .activity-entry {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+  
